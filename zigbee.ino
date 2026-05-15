@@ -357,8 +357,16 @@ void loop() {
         Serial.println("  dXY           - Digital write: X=LED(1-3), Y=0(LOW)/1(HIGH)");
         Serial.println("  ciX           - Toggle PWM invert for LED X (1-3)");
         Serial.println("  info          - Print status");
+        Serial.println("  reset         - Factory reset Zigbee (new pairing needed!)");
         Serial.println("  help          - Print this message");
         Serial.println();
+      }
+      
+      // reset - Factory reset Zigbee
+      else if (s == "reset") {
+        Serial.println("\n>>> Factory resetting Zigbee and rebooting...");
+        delay(500);
+        Zigbee.factoryReset();
       }
       
       else {

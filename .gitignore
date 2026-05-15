@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arduino / ESP32 build artifacts
+*.ino.bin
+*.ino.elf
+*.ino.map
+*.elf
+*.bin
+*.hex
+*.map
+*.uf2
+build/
+.pio/
+
+# Zigbee2MQTT / Node
+node_modules/
+dist/
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets / local config
+.env
+.env.*
+secrets.json
